@@ -1,4 +1,6 @@
-const defaultTheme = {
+import { ThemeType, Dark, Light } from "@/Types/MyTheme";
+
+const defaultTheme: ThemeType = {
   shadows: [
     "none",
     "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",
@@ -88,9 +90,9 @@ const defaultTheme = {
   },
 };
 
-const dark = {
+const dark: Dark = {
   imagefilter: "grayscale(0%)",
-  checked:true,
+  checked: true,
 
   palettebackgrounddefault: "#303030",
   palettetextprimary: "#fff",
@@ -130,8 +132,8 @@ const dark = {
     "linear-gradient(rgba(255, 255, 255, 0) 68%, rgb(48, 48, 48) 100%)",
 };
 
-const light = {
-  checked:false,
+const light: Light = {
+  checked: false,
   palettebackgrounddefault: "#fafafa",
   palettetextprimary: "rgba(0, 0, 0, 0.87)",
   palettetextsecondary: "rgba(0, 0, 0, 0.54)",
